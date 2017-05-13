@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.anytimepayment.android">
 
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:name=".AnyTimePayment"
         android:allowBackup="true"
@@ -10,7 +14,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.screens.HomeActivity"
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".ui.screens.HomeActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +30,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.screens.AccountActivity"
+        <activity
+            android:name=".ui.screens.ProfileActivity"
+            android:label="@string/my_profile"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ui.screens.HomeActivity"/>
+        <activity
+            android:name=".vision.BarcodeCaptureActivity"
+            android:label="@string/scan_qr_code"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.screens.DisplayBarcodeActivity"
+            android:label="@string/scan_pay_money"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.screens.AddMoneyActivity"
+            android:label="@string/add_money"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.screens.BaseActivity"
             android:screenOrientation="portrait"/>
     </application>
 

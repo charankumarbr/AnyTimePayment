@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/aa_layout_complete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/aa_textview_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:textSize="17sp"/>
+
+    <TextView
+        android:id="@+id/aa_textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/aa_textview_name_label"
+        android:layout_alignBottom="@+id/aa_textview_name_label"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/aa_textview_mobile_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile_number"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:textSize="17sp"
+        android:layout_below="@+id/aa_textview_name_label"/>
+
+    <TextView
+        android:id="@+id/aa_textview_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1234567890"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/aa_textview_mobile_label"
+        android:layout_alignBottom="@+id/aa_textview_mobile_label"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:gravity="right"/>
+
+    <View
+        android:id="@+id/aa_view_trans_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/aa_textview_mobile_label"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/aa_textview_transaction_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:layout_marginStart="16dp"
+        android:textSize="19sp"
+        android:layout_below="@+id/aa_view_trans_divider"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/aa_textview_transaction_history"/>
+
+    <View
+        android:id="@+id/aa_view_contact_us_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/aa_textview_contact_us"/>
+
+    <TextView
+        android:id="@+id/aa_textview_contact_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:layout_marginStart="16dp"
+        android:textSize="19sp"
+        android:layout_above="@+id/aa_view_app_info_divider"
+        android:layout_marginEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
+
+    <View
+        android:id="@+id/aa_view_app_info_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/aa_textview_app_info"/>
+
+    <TextView
+        android:id="@+id/aa_textview_app_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v 1.0"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

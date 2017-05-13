@@ -5,4 +5,26 @@
     <string name="mobile_number">Mobile Number</string>
     <string name="scan_qr_code">Scan QR Code</string>
     <string name="amount">Amount</string>
+    <string name="amount_in_rupee">Amount in \u20B9</string>
+    <string name="pay_money">Pay Money</string>
+    <string name="receive_money">Receive Money</string>
+    <string name="Rs">\u20B9</string>
+
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">Cannot scan the QR code, because it does not have the camera permission.</string>
+    <string name="low_storage_error">Dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode"</string>
+    <string name="amount_is_required">Amount is required</string>
+    <string name="name">Name</string>
+    <string name="scan_pay_money"><![CDATA[Scan & Pay Money]]></string>
+    <string name="my_profile">My Profile</string>
+    <string name="amount_is_not_valid">Amount is not valid</string>
+    <string name="add_money">Add Money</string>
 </resources>
