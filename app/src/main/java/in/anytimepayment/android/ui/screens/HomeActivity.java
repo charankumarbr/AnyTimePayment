@@ -50,6 +50,7 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
         mBtnPay.setOnClickListener(this);
 
         mTvWalletBalance = (TextView) findViewById(R.id.ah_textview_balance);
+        mTvWalletBalance.setOnClickListener(this);
 
         mTietAmount = (TextInputEditText) findViewById(R.id.ah_tiet_amount);
         mTilAmount = (TextInputLayout) findViewById(R.id.ah_til_amount);
@@ -101,6 +102,15 @@ public class HomeActivity extends BaseActivity implements View.OnClickListener {
                     }
                 } else {
 
+                }
+                break;
+
+            case R.id.ah_textview_balance:
+                if (AppUtil.isConnected()) {
+                    startActivity(new Intent(HomeActivity.this, AddMoneyActivity.class));
+
+                } else {
+                    AppUtil.showSnackbar(mRootView, getString(R.string.no_internet));
                 }
                 break;
         }

@@ -29,13 +29,14 @@
         <TextView
             android:id="@+id/ah_textview_balance"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:textSize="18sp"
             android:layout_alignParentEnd="true"
             android:textColor="@android:color/white"
             android:text="100.00"
             android:layout_marginEnd="12dp"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"/>
     </RelativeLayout>
 
     <LinearLayout
@@ -97,12 +98,10 @@
         android:id="@+id/ah_til_amount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ah_til_mobile_number"
-        android:layout_toStartOf="@+id/ah_button_pay"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="12dp"
-        android:gravity="bottom">
+        android:gravity="bottom"
+        android:layout_below="@+id/ah_til_mobile_number"
+        android:layout_alignStart="@+id/ah_til_mobile_number">
         <android.support.design.widget.TextInputEditText
             android:id="@+id/ah_tiet_amount"
             android:layout_width="match_parent"

@@ -3,6 +3,110 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:id="@+id/aam_layout_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:orientation="vertical">
 
+            <EditText
+                android:id="@+id/aam_edittext_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:layout_centerHorizontal="true"
+                android:text="5000"
+                android:inputType="numberDecimal"
+                android:textSize="23sp"
+                android:gravity="center"
+                android:textColor="@android:color/white"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/aam_button_add_money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/add_money"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aam_layout_add_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Credit/Debit card"
+            android:textSize="21sp"/>
+
+        <EditText
+            android:id="@+id/aam_edittext_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Card Number"
+            android:textSize="18sp"
+            android:maxLength="19"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/aam_edittext_cvv"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="CVV"
+                android:textSize="18sp"
+                android:maxLength="3"/>
+
+            <EditText
+                android:id="@+id/aam_edittext_expiry"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Exp. year"
+                android:textSize="18sp"
+                android:maxLength="5"
+                android:layout_marginStart="12dp"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/aam_button_confirm_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="CONFIRM"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coming Shortly: More ways to add money!"
+            android:layout_marginTop="32dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
 </RelativeLayout>

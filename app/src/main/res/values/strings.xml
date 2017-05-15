@@ -27,4 +27,5 @@
     <string name="my_profile">My Profile</string>
     <string name="amount_is_not_valid">Amount is not valid</string>
     <string name="add_money">Add Money</string>
+    <string name="no_internet">No internet connection!</string>
 </resources>
